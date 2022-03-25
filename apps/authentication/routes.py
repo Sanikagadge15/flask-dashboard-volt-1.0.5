@@ -3,7 +3,7 @@
 Copyright (c) 2019 - present AppSeed.us
 """
 
-from flask import render_template, redirect, request, url_for
+from flask import flash, render_template, redirect, request, url_for
 from flask_login import (
     current_user,
     login_user,
@@ -12,7 +12,8 @@ from flask_login import (
 
 from apps import db, login_manager
 from apps.authentication import blueprint
-from apps.authentication.forms import LoginForm, CreateAccountForm
+from flask_login import login_required
+from apps.authentication.forms import LoginForm, CreateAccountForm, ProfileForm
 from apps.authentication.models import Users
 
 from apps.authentication.util import verify_pass
@@ -67,7 +68,7 @@ def register():
         username = request.form['username']
         email = request.form['email']
 
-        # Check usename exists
+        # Check username exists
         user = Users.query.filter_by(username=username).first()
         if user:
             return render_template('accounts/register.html',
@@ -95,6 +96,45 @@ def register():
 
     else:
         return render_template('accounts/register.html', form=create_account_form)
+
+
+@blueprint.route('/settings', methods= ["GET", "POST"])
+@login_required
+def profile():
+    # profile_form = ProfileForm(request.form)
+    # if request.method == 'POST':
+    #     f = request.files['file']
+    #     filename = secure_filename(f.filename)
+    #     f.save(os.path.join(app.config['UPLOAD_FOLDER'] , f.filename))    
+    #     file = open(app.config['UPLOAD_FOLDER'] + filename,"r")
+    #     content = file.read()   
+    #     flash("file uploaded successfully")
+    # return render_template('settings.html', filename=filename)
+
+    # if 'settings' in request.form:
+    #     firstname = request.form['firstname']
+    #     lastname = request.form['lastname']
+    #     birthday = request.form['birthday']
+    #     gender = request.form['gender']
+    #     address = request.form['address']
+    #     apt_no = request.form['apt_no']
+    #     city = request.form['city']
+    #     state = request.form['state']
+    #     pincode= request.form['pincode']
+    #     yearofstudy= request.form['yearofstudy']
+    #     Marks= request.form['Marks']
+    #     institute= request.form['institute']
+    #     account= request.form['account']
+    #     ifsc= request.form['ifsc']
+    #     branch= request.form['branch']
+
+        profile = Users(**request.form)
+        if current_user.is_authenticated:
+            print(profile)
+            db.session.add(profile)
+            db.session.commit()
+        else:
+            print('nhk')
 
 
 @blueprint.route('/logout')
