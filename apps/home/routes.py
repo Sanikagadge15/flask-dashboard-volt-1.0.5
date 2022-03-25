@@ -3,10 +3,14 @@
 Copyright (c) 2019 - present AppSeed.us
 """
 
-from apps.home import blueprint
+from apps.home import app, blueprint
 from flask import render_template, request
 from flask_login import login_required
 from jinja2 import TemplateNotFound
+from werkzeug.utils import secure_filename
+import os 
+
+app.config["UPLOAD_FOLDER"] = "/static/docs/"
 
 
 @blueprint.route('/index')
@@ -36,6 +40,19 @@ def route_template(template):
 
     except:
         return render_template('home/page-500.html'), 500
+
+
+@blueprint.route('/settings', methods= ["GET", "POST"])
+@login_required
+def profile():
+    if request.method == 'POST':
+        f = request.files['file']
+        filename = secure_filename(f.filename)
+        f.save(os.path.join(app.config['UPLOAD_FOLDER'] , f.filename))    
+        # file = open(app.config['UPLOAD_FOLDER'] + filename,"r")
+        # content = file.read()   
+        # flash("file uploaded successfully")
+    return render_template('settings.html', filename=filename)
 
 
 # Helper - Extract current page name from request
