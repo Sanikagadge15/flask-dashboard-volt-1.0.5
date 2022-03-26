@@ -23,17 +23,14 @@
 
 Tools and technologies that you learnt and used in the project.
 
-## Tech Stack
-## Languages
-<br />
-*1* Python
-*2* HTML
-*3* CSS
-*4* Javascript
+## Frontend
+1) HTML
+2) CSS
+3) Javascript
 ## Framework
-*1* Flask
+1) Flask and Flask
 ## Database
-*1* SQLAlchemy
+1) SQLAlchemy
 
 ## Project Setup
 ```bash
