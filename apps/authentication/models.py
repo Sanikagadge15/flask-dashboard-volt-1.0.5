@@ -17,6 +17,22 @@ class Users(db.Model, UserMixin):
     username = db.Column(db.String(64), unique=True)
     email = db.Column(db.String(64), unique=True)
     password = db.Column(db.LargeBinary)
+    #profile
+    firstname = db.Column(db.String(64))
+    lastname = db.Column(db.String(64))
+    birthday = db.Column(db.String(64))
+    gender = db.Column(db.String(64))
+    address = db.Column(db.String(64))
+    apt_no = db.Column(db.String(64))
+    city = db.Column(db.String(64))
+    state = db.Column(db.String(64))
+    pincode = db.Column(db.Integer)
+    yearofstudy = db.Column(db.Integer)
+    Marks = db.Column(db.Integer)
+    institute = db.Column(db.String(64))
+    account = db.Column(db.Integer)
+    ifsc = db.Column(db.String(64))
+    branch = db.Column(db.String(64))
 
     def __init__(self, **kwargs):
         for property, value in kwargs.items():
