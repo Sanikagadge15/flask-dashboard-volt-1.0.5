@@ -26,17 +26,14 @@ Tools and technologies that you learnt and used in the project.
 ## Tech Stack
 ## Languages
 <br />
-**1** Python \n
-<br />
-<br />
-**2** HTML
-<br />
-**3** CSS
-**4** Javascript
+*1* Python
+*2* HTML
+*3* CSS
+*4* Javascript
 ## Framework
-**1** Flask
+*1* Flask
 ## Database
-**1** SQLAlchemy
+*1* SQLAlchemy
 
 ## Project Setup
 ```bash
@@ -67,29 +64,23 @@ $ # Set up the DEBUG environment
 $ # (Unix/Mac) export FLASK_ENV=development
 $ # (Windows) set FLASK_ENV=development
 $ # (Powershell) $env:FLASK_ENV = "development"
-$
-
-
-
-
-<br />
-
+```
 ## Usage
-Steps to run your project once its setup. If you have an app or website, list how the user can go about using it.
+
+>Steps to run your project once its setup. If you have an app or website, list how the user can go about using it.
 $ # Start the application (development mode)
 $ # --host=0.0.0.0 - expose the app on all network interfaces (default 127.0.0.1)
 $ # --port=5000    - specify the app port (default 5000)  
 $ flask run --host=0.0.0.0 --port=5000
 $
 $ # Access the dashboard in browser: http://127.0.0.1:5000/
-```
+
 > Note: To use the app, please access the registration page and create a new user. After authentication, the app will unlock the private pages.
 
 ## Applications
 *Objectives: a) To monitor the no. of aids/ applications issue across India for persons with disabilities b) Transparency on benefits received by the beneficiaries c) Reduction of replication/duplication of beneficiaries who are benefited through ADIP scheme d) To allow self registration and online document verification to avail the scheme benefits from a nearest implementing agency.
 
 ## Future scope
->Mention ways in which the project can be improved and built upon in the future.
 1. Social Awareness
 Update students about the new schemes on the ADIP website through bulk email and messaging services.
 Remind the applicant about the pending application and ask them to complete it before the given deadline
@@ -104,7 +95,6 @@ Students receive the scholarship in time to use it where it is needed thereby en
 
 ## Screenshots
 
-![Screenshot alt text](https://img.freepik.com/free-photo/blue-purple-technology-circuit_73426-205.jpg "Here is a screenshot")
 ![WhatsApp Image 2022-03-26 at 8 53 53 AM](https://user-images.githubusercontent.com/59245336/160223098-408ac3bb-2a6a-4312-a92a-0fe613873e6f.jpeg)
 ![WhatsApp Image 2022-03-26 at 8 53 19 AM](https://user-images.githubusercontent.com/59245336/160223107-a63e56f8-fd5b-43ee-a5c4-7462dba0cdeb.jpeg)
 ![WhatsApp Image 2022-03-26 at 8 53 37 AM](https://user-images.githubusercontent.com/59245336/160223113-c6f4fc3c-e490-4c0c-ae4c-3c77e9e930ee.jpeg)
