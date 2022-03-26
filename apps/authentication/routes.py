@@ -98,43 +98,6 @@ def register():
         return render_template('accounts/register.html', form=create_account_form)
 
 
-@blueprint.route('/settings', methods= ["GET", "POST"])
-@login_required
-def profile():
-    # profile_form = ProfileForm(request.form)
-    # if request.method == 'POST':
-    #     f = request.files['file']
-    #     filename = secure_filename(f.filename)
-    #     f.save(os.path.join(app.config['UPLOAD_FOLDER'] , f.filename))    
-    #     file = open(app.config['UPLOAD_FOLDER'] + filename,"r")
-    #     content = file.read()   
-    #     flash("file uploaded successfully")
-    # return render_template('settings.html', filename=filename)
-
-    # if 'settings' in request.form:
-    #     firstname = request.form['firstname']
-    #     lastname = request.form['lastname']
-    #     birthday = request.form['birthday']
-    #     gender = request.form['gender']
-    #     address = request.form['address']
-    #     apt_no = request.form['apt_no']
-    #     city = request.form['city']
-    #     state = request.form['state']
-    #     pincode= request.form['pincode']
-    #     yearofstudy= request.form['yearofstudy']
-    #     Marks= request.form['Marks']
-    #     institute= request.form['institute']
-    #     account= request.form['account']
-    #     ifsc= request.form['ifsc']
-    #     branch= request.form['branch']
-
-        profile = Users(**request.form)
-        if current_user.is_authenticated:
-            print(profile)
-            db.session.add(profile)
-            db.session.commit()
-        else:
-            print('nhk')
 
 
 @blueprint.route('/logout')

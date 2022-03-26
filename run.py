@@ -20,7 +20,7 @@ from apps import create_app, db
 #   "messagingSenderId": "756421308418",
 #   "appId": "1:756421308418:web:8881d941f117a013b4b71b",
 #   "databaseURL": "https://console.firebase.google.com/project/flasksih/database/flasksih-default-rtdb/data"
-# }
+# }ite
 
 # firebase = pyrebase.initialize_app(firebaseConfig)
 # auth=firebase.auth()
