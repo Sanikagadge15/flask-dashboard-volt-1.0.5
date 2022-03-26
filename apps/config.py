@@ -5,7 +5,6 @@ Copyright (c) 2019 - present AppSeed.us
 
 import os
 from decouple import config
-# import sqlite3
 
 class Config(object):
 

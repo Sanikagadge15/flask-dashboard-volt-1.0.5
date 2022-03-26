@@ -13,7 +13,6 @@ app = Flask(__name__)
 db = SQLAlchemy(app)
 db.create_all()
 
-app = Flask(__name__)
 blueprint = Blueprint(
     'home_blueprint',
     __name__,

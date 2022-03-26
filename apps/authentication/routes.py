@@ -98,7 +98,16 @@ def register():
         return render_template('accounts/register.html', form=create_account_form)
 
 
+@blueprint.route('/settings', methods= ["GET", "POST"])
+def profile():
+    profile_form = ProfileForm(request.form)
+    profile = Users(**request.form)
 
+    print(profile)
+    db.session.add(profile)
+    db.session.commit()
+    
+    return render_template('home/settings.html', form=profile_form)
 
 @blueprint.route('/logout')
 def logout():
