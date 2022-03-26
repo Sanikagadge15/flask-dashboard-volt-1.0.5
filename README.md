@@ -39,6 +39,8 @@ PRO versions include **Premium UI Kits**, Lifetime updates and **24/7 LIVE Suppo
 ![Flask Bootstrap 5 Volt - Template project provided by AppSeed.](https://raw.githubusercontent.com/app-generator/flask-dashboard-volt/master/media/flask-dashboard-volt-screen.png)
 
 <br /> -->
+## Tech Stack
+
 
 ## How to use it
 
@@ -292,7 +294,7 @@ Visit `http://localhost:8001` in your browser. The app should be up & running.
 
 <br />
 
-## Credits & Links
+<!-- ## Credits & Links
 
 - [Flask Framework](https://www.palletsprojects.com/p/flask/) - The offcial website
 - [Boilerplate Code](https://appseed.us/boilerplate-code) - Index provided by **AppSeed**
@@ -301,4 +303,4 @@ Visit `http://localhost:8001` in your browser. The app should be up & running.
 <br />
 
 ---
-[Flask Bootstrap 5](https://appseed.us/admin-dashboards/flask-dashboard-volt) Volt - Provided by **AppSeed [App Generator](https://appseed.us/app-generator)**.
+[Flask Bootstrap 5](https://appseed.us/admin-dashboards/flask-dashboard-volt) Volt - Provided by **AppSeed [App Generator](https://appseed.us/app-generator)**. -->
