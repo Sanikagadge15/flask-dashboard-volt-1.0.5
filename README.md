@@ -12,8 +12,9 @@
 
 
 ## Description
-*Background: ADIP Scheme is being implemented by different agencies for Persons with Disabilities across India. However, a national portal regarding the latest ADIP beneficiary details is not available. Presently, there is no software application to register Persons with Disabilities (PwDs) for receiving Aids and appliances under ADIPS scheme. As UDID cards were in the process of implementation throughout India, this can be easily link with the present software proposed and have a timeline of benefits received by the beneficiaries under one application/ database. This would be helpful in identāifying clusters which often remain unreached. 
-*Summary: For registration of Persons with Disabilities under ADIP scheme 
+Background: ADIP Scheme is being implemented by different agencies for Persons with Disabilities across India. However, a national portal regarding the latest ADIP beneficiary details is not available. Presently, there is no software application to register Persons with Disabilities (PwDs) for receiving Aids and appliances under ADIPS scheme. As UDID cards were in the process of implementation throughout India, this can be easily link with the present software proposed and have a timeline of benefits received by the beneficiaries under one application/ database. This would be helpful in identāifying clusters which often remain unreached. 
+<br />
+Summary: For registration of Persons with Disabilities under ADIP scheme 
 
 
 ## Links
@@ -23,14 +24,14 @@
 
 Tools and technologies that you learnt and used in the project.
 
-## Frontend
-1) HTML
-2) CSS
-3) Javascript
-## Framework
-1) Flask and Flask
-## Database
-1) SQLAlchemy
+* Frontend
+  1) HTML
+  2) CSS
+  3) Javascript
+* Framework
+  1) Flask and Flask
+* Database
+  1) SQLAlchemy
 
 ## Project Setup
 ```bash
@@ -75,13 +76,16 @@ $ # Access the dashboard in browser: http://127.0.0.1:5000/
 > Note: To use the app, please access the registration page and create a new user. After authentication, the app will unlock the private pages.
 
 ## Applications
-*Objectives: a) To monitor the no. of aids/ applications issue across India for persons with disabilities b) Transparency on benefits received by the beneficiaries c) Reduction of replication/duplication of beneficiaries who are benefited through ADIP scheme d) To allow self registration and online document verification to avail the scheme benefits from a nearest implementing agency.
+Objectives: 
+1. To monitor the no. of aids/ applications issue across India for persons with disabilities 
+2. Transparency on benefits received by the beneficiaries 
+3. Reduction of replication/duplication of beneficiaries who are benefited through ADIP scheme 
+4. To allow self registration and online document verification to avail the scheme benefits from a nearest implementing agency.
 
 ## Future scope
 1. Social Awareness
 Update students about the new schemes on the ADIP website through bulk email and messaging services.
 Remind the applicant about the pending application and ask them to complete it before the given deadline
-No student has to ever miss a chance at getting the scholarship they deserve!
 Add speech recognition to the form (speech to text and text to speech) for differently-abled people to fill forms and gain advantage.
 
 2. Prompt Scholarship
@@ -95,7 +99,9 @@ Students receive the scholarship in time to use it where it is needed thereby en
 ![WhatsApp Image 2022-03-26 at 8 53 53 AM](https://user-images.githubusercontent.com/59245336/160223098-408ac3bb-2a6a-4312-a92a-0fe613873e6f.jpeg)
 ![WhatsApp Image 2022-03-26 at 8 53 19 AM](https://user-images.githubusercontent.com/59245336/160223107-a63e56f8-fd5b-43ee-a5c4-7462dba0cdeb.jpeg)
 ![WhatsApp Image 2022-03-26 at 8 53 37 AM](https://user-images.githubusercontent.com/59245336/160223113-c6f4fc3c-e490-4c0c-ae4c-3c77e9e930ee.jpeg)
-![WhatsApp Image 2022-03-26 at 8 54 44 AM](https://user-images.githubusercontent.com/59245336/160223122-9e88b7e7-9da6-44ec-bdf9-97c21d507e52.jpeg)
+![WhatsApp Image 2022-03-26 at 8 54 44 AM](https://user-images.githubusercontent.com/59245336/160223819-af90a302-022e-4392-8ce2-29558f33d30f.jpeg)
+![WhatsApp Image 2022-03-26 at 8 54 17 AM](https://user-images.githubusercontent.com/59245336/160223813-b2ced62d-8684-40a1-aafd-5368826e2426.jpeg)
+![Screenshot from 2022-03-26 09-22-53](https://user-images.githubusercontent.com/59245336/160223802-5ab3f740-cd13-4305-91c9-767f65df293b.png)
 
 
 
