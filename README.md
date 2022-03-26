@@ -40,7 +40,15 @@ PRO versions include **Premium UI Kits**, Lifetime updates and **24/7 LIVE Suppo
 
 <br /> -->
 ## Tech Stack
-
+## Languages
+**1 Python
+**2 HTML
+**3 CSS
+**4 Javascript
+## Framework
+**1 Flask
+## Database
+SQLAlchemy
 
 ## How to use it
 
