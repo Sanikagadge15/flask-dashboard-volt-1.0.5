@@ -6,6 +6,10 @@ Copyright (c) 2019 - present AppSeed.us
 #import pwd
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, DateField, SelectField, IntegerField, DecimalField, MultipleFileField
+from decimal import Decimal
+from flask_wtf import FlaskForm
+from sqlalchemy import Integer
+from wtforms import StringField, PasswordField, IntegerField, DateField, SelectField, DecimalField
 from wtforms.validators import Email, DataRequired
 import sqlite3
 

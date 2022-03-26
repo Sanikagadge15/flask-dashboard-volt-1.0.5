@@ -3,7 +3,7 @@
 Copyright (c) 2019 - present AppSeed.us
 """
 
-from flask import render_template, redirect, request, url_for
+from flask import flash, render_template, redirect, request, url_for
 from flask_login import (
     current_user,
     login_user,
@@ -12,7 +12,8 @@ from flask_login import (
 
 from apps import db, login_manager
 from apps.authentication import blueprint
-from apps.authentication.forms import LoginForm, CreateAccountForm
+from flask_login import login_required
+from apps.authentication.forms import LoginForm, CreateAccountForm, ProfileForm
 from apps.authentication.models import Users
 
 from apps.authentication.util import verify_pass
@@ -96,6 +97,17 @@ def register():
     else:
         return render_template('accounts/register.html', form=create_account_form)
 
+
+@blueprint.route('/settings', methods= ["GET", "POST"])
+def profile():
+    profile_form = ProfileForm(request.form)
+    profile = Users(**request.form)
+
+    print(profile)
+    db.session.add(profile)
+    db.session.commit()
+    
+    return render_template('home/settings.html', form=profile_form)
 
 @blueprint.route('/logout')
 def logout():
